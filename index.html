@@ -7,93 +7,328 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <!-- style.css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <!-- Animate CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Lato|Poppins|Lobster|&display=swap" rel="stylesheet">
+  <!-- Materialize Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous">
+    <!-- Dev Icons -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Hasanain Mohammed</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item button-one">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item button-two">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item button-three">
-            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section>
+  <section class="fix">
     <div class="welcome-page">
       <div class="text-center image-one">
-        <div class="row"> 
-          <div class="col-md-7">
-            <h1>I aspire to be a full stack web developer.</h1>
+        <div class="row">
+          <div class="col-md-7 homePage">
+            <h4 class="name animated bounceInDown">Hasanain Mohammed</h4>
+              <hr class="sizing">
+              <h4 class="name animated flipInY">Full-Stack Web Developer</h4>
+            </h4>
+            <button class="waves-effect waves-light btn-large button-one" style="color:black; border: solid 3px black;">Check
+              Me Out!<i class="material-icons right">arrow_downward</i></button>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-<section class="text-center" id="about-section">
-</section>
-
-<section class="text-center" id="project-section">
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="card" style="width: 18rem;">
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <div class="card-body">
-            <h5 class="card-title">Bamazon</h5>
-            <p class="card-text">This application allows user to purchase available products in the store. It will take in orders from the customer and update the database when stock is depleted.</p>
-            <a href="https://github.com/hasanainm/bamazon" class="btn btn-primary">View Here</a>
+  <div class="whole-about">
+    <section class="text-center" id="about-section" class="intro-background">
+      <!-- <div class="about-me"> -->
+      <h2 class="aboutMe-header">How did I come about Web Development?</h2>
+      <!-- </div> -->
+      <div class="aboutMe-content container">
+        <div class="sub-header">
+          <br>
+          <p class="intro-subheader-text section-subheader-text">
+            Since the beginning of my junior year at University of Houston, I challenged myself to making an "A" in a
+            class called transaction processing. I frequently learned from people that the class is vigorous and most
+            people struggle throughout the course. I felt ambitious towards the class and passionate about performing
+            above average. The 8-week course focused on html and Javascript in the client-server environment. As I was
+            learning and practicing html and Javascript, I found it to be quite interesting and enjoyable. I did some
+            research and came across a intensive 24-week coding bootcamp that introduced me the work of databases,
+            servers, systems engineering, and clients.
+          </p>
+        </div>
+      </div>
+      <div class="section-gap"></div>
+      <div class="skills-cards row">
+        <div class="skills-card-col col m12 l4 left-card mid-card" style="margin-left: 150px; margin-right: 40px;">
+          <div class="skills-card-image">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="skills-card-header">
+            <div class="skills-card-header-text">Front-End</div>
+          </div>
+          <div class="skills-card-body">
+            <div class="skills-card-body-text">
+              I believe when the user first visits a website, they should really get the gist of what the company's
+              purpose is about. I understand as a front-end developer you need to know html, css and javascript
+              competently. And as the world of front-end development keeps evolving, I am excited to learn and thrive
+              in this area.
+            </div>
+          </div>
+          <div class="skills-card-list">
+            <div class="skills-card-list-header">
+              <div class="skills-card-list-header-text">
+                What my code is written in:
+              </div>
+            </div>
+            <div class="skills-card-list-items">
+              <p>HTML, Javascript, jQuery, CSS</p>
+            </div>
+          </div>
+          <div class="skills-card-list">
+            <div class="skills-card-list-header">
+              <div class="skills-card-list-header-text">
+                Tools I write with:
+              </div>
+            </div>
+            <div class="skills-card-list-items">
+              <div class="skills-card-list-item">Bootstrap</div>
+              <div class="skills-card-list-item">React</div>
+              <div class="skills-card-list-item">Materialize</div>
+              <div class="skills-card-list-item">React-Materialize</div>
+              <div class="skills-card-list-item">HandleBars</div>
+              <div class="skills-card-list-item">jQueryUI</div>
+            </div>
           </div>
         </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="card" style="width: 18rem;">
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <div class="card-body">
-            <h5 class="card-title">Hot This Weekend</h5>
-            <p class="card-text">This app is aimed at people of all ages who enjoy concerts and events. The purpose of this app is to allow people to plan their weekend based around an event and the kind of weather they can expect.</p>
-            <a href="https://darekr88.github.io/project1/" class="btn btn-primary">View Here</a>
+        <div class="skills-card-col col m12 l4 left-card" style="margin-right: 150px;">
+          <div class="skills-card-image">
+            <i class="fas fa-server fa-3x skills-card-icon"></i>
+          </div>
+          <div class="skills-card-header">
+            <div class="skills-card-header-text">Back-End</div>
+          </div>
+          <div class="skills-card-body">
+            <div class="skills-card-body-text">
+              Throughtout my learning experience, I realized that it is important to first learn and understand the
+              basics of how back-end works. Utilzing these back-end technologies is important, however knowing the
+              fundamentals is important as well in order to write efficient code.
+            </div>
+          </div>
+          <div class="skills-card-list">
+            <div class="skills-card-list-header">
+              <div class="skills-card-list-header-text">
+                What languages I understand:
+              </div>
+            </div>
+            <div class="skills-card-list-items">
+              <p>Node, MongoDB, MySQL, Java</p>
+            </div>
+          </div>
+          <div class="skills-card-list">
+            <div class="skills-card-list-header">
+              <div class="skills-card-list-header-text">
+                Tools I code with:
+              </div>
+            </div>
+            <div class="skills-card-list-items">
+              <div class="skills-card-list-item">Express</div>
+              <div class="skills-card-list-item">Mongoose</div>
+              <div class="skills-card-list-item">Sequelize</div>
+              <div class="skills-card-list-item">Firebase</div>
+              <div class="skills-card-list-item">Git</div>
+            </div>
           </div>
         </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="card" style="width: 18rem;">
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <div class="card-body">
-            <h5 class="card-title">H.A.S. Blood Clinic</h5>
-            <p class="card-text">H.A.S. Blood Clinic is a scheduling application which allows a potential donor to sign up to donate blood and make appointments on when they would like to do so. Our application is also user-friendly as it has more information on what to do if one would like to volunteer for H.A.S. Blood Clinic, host a blood drive, or even donate money!</p>
-            <a href="https://protected-dusk-63750.herokuapp.com/" class="btn btn-primary">View Here</a>
-          </div>
-        </div>
-    </div>
+      </div>
+    </section>
   </div>
 
-</section>
+  <section class="project-section">
+    <br>
+    <h1 class="project-font">My Projects</h1>
+    <div class="divider CustomDivider"></div>
+    <section class="hotweekend">
+      <!-- <div class="divider CustomDivider"></div> -->
+      <div class="row">
+        <div class="col l6 m12 s12">
+          <img src="assets/images/project1.png" class="project-image" alt="project1">
+          <a href="https://darekr88.github.io/project1/" target="_blank"><button type="button" class="waves-effect waves-light btn-small" id="btn1">launch app</button></a>
+          <a href="https://github.com/DarekR88/project1/tree/hasanain" target="_blank"><button type="button" class="waves-effect waves-light btn-small" id="btn11">view on github</button></a>
+        </div>
+        <div class="col l6 m12 s12">
+          <h4 class="project-title">Hot This Weekend</h4>
+          <p class="project-summary">"Hot this Weekend" is an app aimed at people of all ages who enjoy concerts and
+            events. The user will enter in a zip code and this app will return concerts, events and 5 days worth of
+            weather. The purpose of this is to allow people to plan their weekend based around an event and the kind of
+            weather they can expect.</p>
+          <h4 class="project-details">How it works</h4>
+          <p class="project-summary">Hot This Weekend retrieves and displays information from API calls made through
+            JQuery's ajax method. The JSON formatted data is displayed to the user using bootstrap, which also utilizes
+            libraries such as animate.css.</p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="row">
+        <div class="tech-images col s12">
+          <i class="devicon-html5-plain-wordmark colored p1-1" id="bs"></i>
+          <i class="devicon-css3-plain-wordmark colored p1-2" id="bs"></i>
+          <i class="devicon-javascript-plain colored p1-3" id="bs"></i>
+          <img class="techLogo p1-4" src="assets/tech-images/image.png" id="fb">
+          <i class="devicon-jquery-plain-wordmark colored p1-5" id="bs"></i>
+          <img class="techLogo p1-6" src="assets/tech-images/moment.png" id="fb">
+          <i class="devicon-bootstrap-plain-wordmark colored p1-7" id="bs"></i>
+          <img class="techLogo p1-8" src="assets/tech-images/animateCSS.png" id="AC">
+        </div>
+      </div>
+    </section>
+    <!-- <div class="divider CustomDivider"></div> -->
+    <section class="project2">
+      <div class="row">
+        <div class="col l6 m12 s12">
+          <h4 class="project-title2">Optimum Auto Styling</h4>
+          <p class="project-summary2">"O.A.S" is an E-commerce website focused on reaching out and offering customers
+            our products and services. As we were building this website, an admin portal was created for the staff to
+            keep track of invoices, sales, and number of services completed. </p>
+          <h4 class="project-details2">How it works</h4>
+          <p class="project-summary2">Customers can submit an appointment form with a selection of one or many services
+            offered by O.A.S. The appointment gets stored in our MongoDB and with the implementation of email.js, the
+            company shoots them an email about their current appointment. It retrieves information from mongoDB using
+            mongoose as an ODM to display products for customers to add to the cart and of course to buy! It is
+            launched
+            on a Node.js Express server that is hosted on Heroku along with MongoLab service.</p>
+        </div>
+        <div class="col l6 m12 s12">
+          <img src="assets/images/project3.png" class="project-image2" alt="project2">
+          <a href="https://goham.herokuapp.com/" target="_blank"><button type="button" class="waves-effect waves-light btn-small" id="btn2">launch app</button></a>
+          <a href="https://github.com/AnamAM/project3/tree/hasanain" target="_blank"><button type="button" class="waves-effect waves-light btn-small" id="btn2">view on github</button></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="tech-images2 col s12">
+          <img class="techLogo p2-1" src="assets/tech-images/htmlCSSJS.png">
+          <img class="techLogo p2-2" src="assets/tech-images/okta.png">
+          <img class="techLogo p2-3" src="assets/tech-images/bootstrap.png">
+          <img class="techLogo p2-4" src="assets/tech-images/materializeCSS.png">
+          <img class="techLogo p2-5" src="assets/tech-images/heroku.png">
+          <br>
+          <img class="techLogo p2-6" src="assets/tech-images/mongoose.png">
+          <img class="techLogo p2-7" src="assets/tech-images/express.png">
+          <img class="techLogo p2-8" src="assets/tech-images/reactJS.png">
+          <img class="techLogo p2-9" src="assets/tech-images/nodeJS.png">
+        </div>
+      </div>
+      <!-- <div class="divider CustomDivider"></div> -->
+      <section class="hasblood">
+        <div class="row">
+          <div class="col l6 m12 s12">
+            <img src="assets/images/project2.png" class="project-image" alt="project1">
+            <a href=" https://protected-dusk-63750.herokuapp.com/" target="_blank"><button type="button" class="waves-effect waves-light btn-small" id="btn3">launch app</button></a>
+          <a href="https://github.com/AnamAM/Project2/tree/hasanain" target="_blank"><button type="button" class="waves-effect waves-light btn-small" id="btn33">view on github</button></a>
+          </div>
+          <div class="col l6 m12 s12">
+            <h4 class="project-title">H.A.S. Blood Clinic</h4>
+            <p class="project-summary">H.A.S. Blood Clinic is a scheduling application which allows a potential donor
+              to sign up to donate blood and make appointments on when they would like to do so. Our application is
+              also user-friendly as it has more information on what to do if one would like to volunteer for H.A.S.
+              Blood Clinic, host a blood drive, or even donate money!.</p>
+            <h4 class="project-details">How it works</h4>
+            <p class="project-summary">H.A.S. Blood Clinic uses mySQL to store the information of a donor to make it
+              easier for our clinic to handle the donors who wish to donate blood and give back to the community.</p>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+          <div class="tech-images2 col s12">
+            <i class="devicon-html5-plain-wordmark colored p3-1" id="sql"></i>
+            <i class="devicon-css3-plain-wordmark colored p3-2" id="sql"></i>
+            <i class="devicon-javascript-plain colored p3-3" id="sql"></i>
+            <i class="devicon-jquery-plain-wordmark colored p3-4" id="sql"></i>
+            <i class="devicon-bootstrap-plain-wordmark colored p3-5" id="sql"></i>
+            <i class="devicon-heroku-plain-wordmark colored p3-6" id="sql"></i>
+            <br>
+            <i class="devicon-mysql-plain-wordmark colored p3-7" id="sql2"></i>
+            <i class="devicon-sequelize-plain-wordmark colored  p3-8" id="sql2"></i>
+            <i class="devicon-express-original-wordmark colored p3-9" id="sql2"></i>
+            <i class="devicon-nodejs-plain-wordmark colored p3-10" id="sql2"></i>
 
-<section class="text-center" id="contact-section"></section>
+          </div>
+        </div>
+      </section>
+    </section>
+    <div class="more-projects">
+      <br>
+      <br>
+      <div class="col-md-12">
+        <h2 class="more-title">More projects I worked on</h2>
+      </div>
+      <br>
+      <div class="whole-cards">
+        <div class="row">
+          <div class="card one" id="more-work">
+            <a href="https://hasanainm.github.io/unit-4-game/" target="_blank"><img src="assets/images/gems.png" class="card-img-top" id="more-work" alt="gem"></a>
+          </div>
+          <div class="card two" id="more-work" style="margin-left: 30px; margin-right: 30px;">
+            <a href="https://hasanainm.github.io/Train-Scheduler/" target="_blank"><img src="assets/images/trainSchedueler.png" class="card-img-top" id="more-work" alt="train"></a>
+          </div>
+          <div class="card three" id="more-work">
+            <a href="https://github.com/hasanainm/liri-node-app" target="_blank"><img src="assets/images/concert.png" class="card-img-top" id="more-work" alt="liribot"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card four" id="more-work">
+            <a href="https://hasanainm.github.io/TriviaGame/" target="_blank"><img src="assets/images/trivia.png" class="card-img-top" id="more-work" alt="trivia"></a>
+          </div>
+          <div class="card five" id="more-work" style="margin-left: 30px; margin-right: 30px;">
+            <a href="https://github.com/hasanainm/bamazon" target="_blank"><img src="assets/images/bamazon.png" class="card-img-top" id="more-work" alt="bamazon"></a>
+          </div>
+          <div class="card six" id="more-work">
+            <a href="https://hasanainm.github.io/clicky-game/" target="_blank"><img src="assets/images/clicky.png" class="card-img-top" id="more-work" alt="clicky"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <h3 class="contact-me">Contact Me</h3>
+      <h4 class="contact-me">Interested in colloborating or have any questions?</h4>
+    </section>
+
+    <footer class="page-footer" id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12" id="contact-icons">
+              <!-- <h5 class="white-text">Contact Me</h5> -->
+              <a href="https://www.linkedin.com/in/hasanainmohammed/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/hasanainm" target="_blank"><i class="fab fa-github-square"></i></a>
+              <a href="mailto:hasanain98@gmail.com"><i class="fas fa-envelope-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container last-thing">
+          Hasanain Mohammed © 2019
+          </div>
+        </div>
+      </footer>
+  </section>
+
 
 </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="assets/javascript/bootstrap.js"></script>
 
 </html>

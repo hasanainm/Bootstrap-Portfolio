@@ -1,3 +1,8 @@
+.fix{
+  display: flex;
+  justify-content: space-between;
+}
+
 .welcome-page{
   background-image: url("../images/me.png");
   width: 100vw;
@@ -5,53 +10,348 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  opacity: .80;
+  opacity: .90;
 }
 
-h1{
-margin-top: 35%;
-margin-left: 10%;
-letter-spacing: 0.2ch;
-font-weight: bolder;
-color: black;
+.name{
+  margin: 1.52rem 0 .912rem 0 !important;
+  margin-top: 65%;
+  margin-left: 10%;
+  font-weight: bolder;
+  color: black;
+  line-height: 110% !important;
+  font-family: 'Lobster', cursive;
+  font-size: 32pt;
+  }
+
+  h2{
+    margin: 0 0 0 0 !important;
+    color:black;
+  }
+
+  .section-subheader-text{
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  }
+
+  .button-one{
+  font-weight: bolder;
+  opacity: 1;
+  line-height: inherit;
+  height: 54px;
+  line-height: 54px;
+  font-size: 15px;
+  padding: 0 28px;
+  margin-top: 20%;
+}
+
+.homePage{
+  margin-top: 30vh;
+}
+
+.sizing{
+  border:solid;
+  width: 500px;
+  size: 1px;
+  border-width: 1px;
 }
 
 #about-section{
-  background-image: url("https://images.unsplash.com/photo-1470723710355-95304d8aece4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
-  width: 100vw;
-  height: 100vh;
+  background-color: rgb(40, 167, 167);
   opacity: .80;
   background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 50vh;
 }
 
-#project-section{
-width: 100vw;
-height: 100vh;
-opacity: .80;
-background-attachment: scroll;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-#contact-section{
-  background-color: lightgrey;
-  width: 100vw;
+.whole-about{
   height: 100vh;
+}
+
+.section-gap{
+  width: 100%;
+  height: 4rem;
   opacity: .80;
-  background-attachment: scroll;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgb(40, 167, 167);
 }
 
-.title{
-  margin-top: 100px;
+.container {
+  width: 75%;
+}
+/* .skills-content {
+  position: relative;
+  top: -4.236rem;
+  background-color: #fff;
+} */
+.container {
+  margin: 0 auto;
+  /* max-width: 1280px; */
 }
 
-.card{
-  
+  .mycard{
+    border: 1px solid #ddd;
+    border-radius: .618rem;
+    padding-top: 2px;
+  }
+
+
+.skills-card-col {
+  border: solid lightgray 1px;
+  border-radius: 1ch;
+  background-color: white;
+  border: 1px solid #607D8B;
+  border-top-color: rgb(96, 125, 139);
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-right-color: rgb(96, 125, 139);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-bottom-color: rgb(96, 125, 139);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(96, 125, 139);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  padding: 3.618px;
 }
+
+.fa-code:before {
+  content: "\f121";
+}
+
+.fas{
+  font-size: 3em;
+  color: navy;
+  margin-top: 10px;
+}
+
+.aboutMe-header{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  margin-top: 40px;
+  color: black;
+}
+
+.skills-card-header-text{
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  color: navy;
+}
+
+.skills-card-list-header-text{
+  font-family: 'Lato', sans-serif;
+  color: navy;
+  font-size: 18pt;
+}
+.skills-cards{
+  margin-top: -2%;
+}
+
+.project-section{
+/* background-color: rgb(97, 241, 246); */
+margin-top: 10%;
+text-align: center;
+height: 130vh;
+}
+
+.divider{
+  width: 75%;
+  margin-left: 12.5%;
+  height: 4px !important;
+  background-color: black !important;
+}
+.project-image {
+    width: 90%;
+    height: 75%;
+    float: left;
+    margin: 65px;
+    margin-left: 20%;
+    border-radius: 4%;
+
+}
+.project-title{
+margin-left: 4%;
+margin-top: 10%;
+font-family: 'Poppins', sans-serif;
+}
+.project-summary {
+  line-height: 2rem;
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Poppins', sans-serif;
+}
+
+ .project-details{
+  margin-left: 1%;
+  font-family: 'Poppins', sans-serif;
+ }
+ .techLogo{
+   width: 10rem;
+ }
+ 
+ .mernLogoCustom{
+   width: 20rem;
+ }
+ .mernLogoCustom1{
+   width: 10rem;
+ }
+
+
+ .project-image2{
+  width: 90%;
+  height: 65%;
+  float: left;
+  margin-top: 65px;
+  margin-right: 65px;
+  margin-bottom: 65px;
+  margin-left: 20px;
+  border-radius: 4%;
+ }
+
+ .project-title2{
+  margin-left: 12%;
+  margin-top: 10%;
+  font-family: 'Poppins', sans-serif;
+ }
+
+ .project-details2{
+  margin-left: 8%;
+  font-family: 'Poppins', sans-serif;
+ }
+
+ .project-summary2{
+  line-height: 2rem;
+  text-align: left;
+  margin-left: 24%;
+  margin-right: 10%;
+  font-family: 'Poppins', sans-serif;
+ }
+
+ .project-font{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 60pt;
+ }
+
+ .tech-images2 {
+   margin-top: -2.5%;
+ }
+
+ #bs {
+   font-size: 7rem;
+ }
+
+ #fb {
+   width: 25%;
+   margin: -8%;
+   margin-bottom: -6%;
+ }
+
+#AC {
+  margin-bottom: 7%;
+}
+
+#sql {
+  font-size: 7rem;
+}
+
+#sql2 {
+  font-size: 9rem;
+}
+
+.hasblood {
+  /* background-color: rgb(97, 241, 246); */
+  background-color: #1bbabf;
+background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  height: 120vh;
+}
+
+.hotweekend {
+  /* background-color: rgb(97, 241, 246); */
+  background-color: #1bbabf;
+background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+}
+
+#more-work{
+  width: 350px;
+  height: 250px;
+}
+.more-title{
+color: whitesmoke;
+font-family: 'Raleway', sans-serif;
+text-transform: capitalize;
+font-weight: bold;
+}
+.whole-cards{
+  margin-left: 7%;
+}
+.more-projects{
+background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/subtle-zebra-3d.png");
+height: 120vh;
+}
+
+.project2 {
+  background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/squairy.png");
+}
+
+#btn3, #btn1 {
+  margin-left: 27%;
+  margin-right: 3px;
+}
+
+#btn3, #btn33, #btn1, #btn11 {
+  border: solid white;
+}
+
+#btn2 {
+  border: solid black;
+  color: black;
+}
+
+
+#contact-icons {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.fa-envelope-square{
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.fa-linkedin{
+  color: navy;
+}
+
+.fa-github-square{
+  color: navy
+}
+
+.contact-me{
+  font-family: 'Lobster', cursive;
+}
+
+.last-thing {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14pt;
+}
+
+#footer {
+  background-color: #1bbabf;
+background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+}
+
+/* as soon as we get 959px we are going to display whatever css rules are inside this media screen.  */
