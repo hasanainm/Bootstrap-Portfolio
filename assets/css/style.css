@@ -1,3 +1,84 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.border {
+  color: black;
+}
+
+.pimg2{
+  background-image:url('../images/codebg.png');
+  min-height:450px;
+}
+
+.pimg3{
+  background-image:url('../images/parallaxbg.png');
+  min-height:400px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#e0e7ec;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#333335;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
+
+
 .fix{
   display: flex;
   justify-content: space-between;
@@ -20,7 +101,7 @@
   font-weight: bolder;
   color: black;
   line-height: 110% !important;
-  font-family: 'Lobster', cursive;
+  font-family: 'Raleway', sans-serif;
   font-size: 32pt;
   }
 
@@ -33,7 +114,7 @@
   color: black;
   text-align: center;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
   }
 
   .button-one{
@@ -56,6 +137,7 @@
   width: 500px;
   size: 1px;
   border-width: 1px;
+  color: black;
 }
 
 #about-section{
@@ -82,22 +164,38 @@
 .container {
   width: 75%;
 }
-/* .skills-content {
-  position: relative;
-  top: -4.236rem;
-  background-color: #fff;
-} */
+
 .container {
   margin: 0 auto;
-  /* max-width: 1280px; */
 }
 
+#skills {
+  margin-left: 23%;
+}
+
+#card2 {
+  margin-left: 30px;
+}
   .mycard{
     border: 1px solid #ddd;
     border-radius: .618rem;
     padding-top: 2px;
   }
 
+  .card-title{
+    text-transform: uppercase;
+    color: navy;
+    text-align: center;
+  }
+
+  .card-body {
+    color: rgb(47, 47, 47);
+    text-align: center;
+  }
+
+  .skills-card-icon {
+    text-align: center;
+  }
 
 .skills-card-col {
   border: solid lightgray 1px;
@@ -142,18 +240,29 @@
 }
 
 .skills-card-header-text{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 3rem;
   color: navy;
 }
 
 .skills-card-list-header-text{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: navy;
   font-size: 18pt;
 }
-.skills-cards{
-  margin-top: -2%;
+
+
+.row {
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-bottom: 0 !important;
+}
+
+
+.project-font {
+  color: silver;
+  font-weight: bolder;
+  font-family: 'Raleway', sans-serif;
 }
 
 .project-section{
@@ -169,31 +278,39 @@ height: 130vh;
   height: 4px !important;
   background-color: black !important;
 }
+
 .project-image {
     width: 90%;
-    height: 75%;
+    height: 70%;
     float: left;
     margin: 65px;
     margin-left: 20%;
-    border-radius: 4%;
-
+    border-radius: .5rem;
 }
+
 .project-title{
 margin-left: 4%;
 margin-top: 10%;
-font-family: 'Poppins', sans-serif;
+font-size: 22pt;
+color: silver;
+font-weight: bold;
+font-family: 'Raleway', sans-serif;
 }
 .project-summary {
-  line-height: 2rem;
+  /* line-height: 2rem; */
   text-align: left;
   margin-left: 10%;
   margin-right: 10%;
-  font-family: 'Poppins', sans-serif;
+  font-size: 10pt;
+  font-family: 'Raleway', sans-serif;
 }
 
  .project-details{
   margin-left: 1%;
-  font-family: 'Poppins', sans-serif;
+  font-size: 22pt;
+  color: silver;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
  }
  .techLogo{
    width: 10rem;
@@ -209,42 +326,22 @@ font-family: 'Poppins', sans-serif;
 
  .project-image2{
   width: 90%;
-  height: 65%;
+  height: 60%;
   float: left;
   margin-top: 65px;
   margin-right: 65px;
   margin-bottom: 65px;
   margin-left: 20px;
-  border-radius: 4%;
+  border-radius: .5rem;
  }
 
- .project-title2{
-  margin-left: 12%;
-  margin-top: 10%;
-  font-family: 'Poppins', sans-serif;
+ .tech-images {
+   margin-top: 2.5%;
  }
-
- .project-details2{
-  margin-left: 8%;
-  font-family: 'Poppins', sans-serif;
- }
-
- .project-summary2{
-  line-height: 2rem;
-  text-align: left;
-  margin-left: 24%;
-  margin-right: 10%;
-  font-family: 'Poppins', sans-serif;
- }
-
- .project-font{
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  font-size: 60pt;
- }
-
+ 
  .tech-images2 {
-   margin-top: -2.5%;
+   margin-top: 2%;
+   font-size: .5rem;
  }
 
  #bs {
@@ -267,20 +364,22 @@ font-family: 'Poppins', sans-serif;
 
 #sql2 {
   font-size: 9rem;
+  margin-right: 5px;
 }
+
 
 .hasblood {
   /* background-color: rgb(97, 241, 246); */
-  background-color: #1bbabf;
-background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+  /* background-color: #1bbabf;
+background-image: url("https://www.transparenttextures.com/patterns/gplay.png"); */
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   height: 120vh;
 }
 
 .hotweekend {
   /* background-color: rgb(97, 241, 246); */
-  background-color: #1bbabf;
-background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+  /* background-color: #1bbabf;
+background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png"); */
 }
 
 #more-work{
@@ -288,7 +387,7 @@ background-image: url("https://www.transparenttextures.com/patterns/diamond-upho
   height: 250px;
 }
 .more-title{
-color: whitesmoke;
+color: black;
 font-family: 'Raleway', sans-serif;
 text-transform: capitalize;
 font-weight: bold;
@@ -297,30 +396,78 @@ font-weight: bold;
   margin-left: 7%;
 }
 .more-projects{
-background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/subtle-zebra-3d.png");
-height: 120vh;
+  text-align: center;
 }
 
 .project2 {
-  background-color: #ffffff;
-background-image: url("https://www.transparenttextures.com/patterns/squairy.png");
+  margin-top: -3%;
 }
+
+
+.okta {
+  text-indent: 100%;
+  color: #008cba;
+  line-height: inherit;
+  text-decoration: none;
+  font-size: 30pt;
+  font-weight: 100;
+  margin-left: -.2%;
+  margin-top: -15%;
+  font-style: normal;
+  margin-right: 2px;
+  font-weight: bolder;
+  
+}
+
+.mongoose {
+  color: #800;
+  font-size: 30pt;
+  font-weight: 100;
+  margin-left: 5%;
+  margin-top: -15%;
+  font-style: normal;
+  margin-left: -.2px;
+}
+
+
+#p2-1, #p2-2, #p2-3, #p2-4, #p2-6, #p2-9, #p2-10, #p2-11 {
+  font-size: 6rem;
+}
+
+#p2-3, #p2-4, #p2-6, #p2-9, #p2-10, #p2-11 {
+  margin-left: 10px;
+}
+
+#p2-9, #p2-10 {
+  margin-bottom: -5%;
+}
+
+#p2-6, #p2-7 {
+  margin-right: 5px;
+}
+
+#p2-5 {
+  height: 50%;
+  margin-top: -5%;
+}
+
+
 
 #btn3, #btn1 {
   margin-left: 27%;
   margin-right: 3px;
+  
 }
 
 #btn3, #btn33, #btn1, #btn11 {
-  border: solid white;
+  background-color: navy;
+  margin-top: -15%;
 }
 
 #btn2 {
-  border: solid black;
-  color: black;
+  margin-top: -15%;
+  background-color: navy;
 }
-
 
 #contact-icons {
   font-size: 3.5rem;
@@ -341,17 +488,20 @@ background-image: url("https://www.transparenttextures.com/patterns/squairy.png"
 }
 
 .contact-me{
-  font-family: 'Lobster', cursive;
+  font-family: 'Raleway', sans-serif;
 }
 
 .last-thing {
   font-family: 'Raleway', sans-serif;
   font-size: 14pt;
+  text-align: center;
+  color: navy;
 }
 
 #footer {
-  background-color: #1bbabf;
-background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+  /* background-color: #1bbabf;
+background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png"); */
+background-color:#e0e7ec;
 }
 
 /* as soon as we get 959px we are going to display whatever css rules are inside this media screen.  */
